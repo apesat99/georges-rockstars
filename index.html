@@ -4,105 +4,186 @@
     <meta charset="utf-8">
     <title>George's Rockstars Home </title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b93a819c92.js" crossorigin="anonymous"></script>
   </head>
   <body>
 
     <header>
 
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">What we do</a>
-            <a class="nav-item nav-link" href="#">Events</a>
-            <a class="nav-item nav-link disabled" href="#">Support Us</a>
-          </div>
-        </div>
-       <div class="navbar-header">
-         <a class="navbar-brand" href="index.html"><img class="logo-img" src="img/logo.png" class="img-responsive"></a>
+      <nav>
+          <div class="nav-content">
+            <a class= "nav-logo" href="#"><img src="img/logo.png" alt="George's Rockstars Logo"></a>
+          <div class="links">
+            <a href="#"><i class="fas fa-music"></i> What We Do</a>
+            <a href="#"><i class="far fa-calendar-check"></i> Events</a>
+            <a href="#"><i class="far fa-heart"></i> Support Us</a>
+            <button class="nav-donate-button nav-link" type="button" name="button">Donate</button>
+          </div>^
+          <span onclick="toggleMenu()" class="material-icons">menu</span>
       </div>
-        <div class="donate-container">
-          <button type="button" class="btn btn-warning">Donate</button>
-        </div>
-
-</nav>
-
+              <div id="dropdown" class="dropdown">
+                <a href="#"><i class="fas fa-music"></i> What We Do</a>
+                <a href="#"><i class="far fa-calendar-check"></i> Events</a>
+                <a href="#"><i class="far fa-heart"></i> Support Us</a>
+                <button class="nav-donate-button"type="button" name="button">Donate</button>
+              </div>
+      </div>
+      </nav>
     </header>
 
     <main>
       <div class="hero-section">
-        <!--<div class="img-container">
-
-        </div>-->
-        <img class="hero-img" src="img/hero-img.jpg" alt="Logo">
+        <div class="img-container">
+          <img class="hero-img" src="img/hero-img.jpg" alt="Logo">
+        </div>
         <div class="hero-text-container">
         <p>George's Rockstars was set up in memory of
           6 year old Gorgeous George. Our mission is
           to bring smiles to children in hospital
           starting with funding music therapy.</p>
 
-          <button type="button" class="btn btn-outline-warning">George's Story</button>
+          <button class="donate-button"type="button" name="button">Donate</button>
         </div>
-
       </div>
+<!--About George section -->
+    <div class="story-section">
+      <div class="story-img">
+  <!-- Bootstrap Carousel -->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/guitar.png" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/sunbathe.jpeg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/beach.jpeg" alt="Third slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/drumsticks.jpg" alt="Fourth slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/hulk.jpeg" alt="Fifth slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/hugs.jpeg" alt="Sixth slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/hornsup.jpeg" alt="Seventh slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/woods.jpeg" alt="Eighth slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/daisy.jpeg" alt="Ninth slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/bluebells.jpg" alt="Tenth slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+      </div>
+      <div class="story-container">
+        <h2 class="test">George's Story</h2>
+        <p> George was first dagnosed with leukaemia in November 2014
+          aged 22 months old. During his near 5 year battle he sadly
+          relapsed 4 times and after having all the treatment there was
+          available including high dose chemo, total body and cranial radiotherapy,
+           bone marrow transplant and revoluntionary CAR T Cell therapy,
+           George passed away at home in August 2019 surrounded by his family.
+           George adored music and nature  and had a huge zest for life and infecsious
+           smile and character. His family decided to start George’s Rockstars in his
+            name to provide music therapy for children in hospital
+            and bring smiles to children that spend too much of their childhood in hospital.
+          </p>
+          <h3>We became a registered charity in March 2020!</h3>
+      </div>
+    </div>
 
     <div id="middle-content">
-      <div class="one">
-        <img src="img/what-we-do.png" class="middle-img" alt="What We Do">
+      <div id="container" class="one">
+        <img src="img/what-we-do1.png" class="middle-img" alt="What We Do">
           <div class="text-block">
-            <a href="#"><h4>What We Do</h4></a>
+            <a href="#"><h4></i> What We Do</h4></a>
           </div>
       </div>
-      <div class="two">
+      <div id="container" class="two">
         <img src="img/gig.png" class="middle-img" alt="Events">
           <div class="text-block">
-            <a href="#"><h4>Events</h4></a>
+            <a href="#"><h4></i> Events</h4></a>
           </div>
       </div>
-      <div class="three">
+      <div id="container" class="three">
         <img src="img/events.png" class="middle-img" alt="Support us">
           <div class="text-block">
-            <a href="#"><h4>Support Our Cause</h4></a>
+            <a href="#"><h4></i> Support Our Cause</h4></a>
           </div>
       </div>
 
     </div>
 
       <div class="news-section">
-        <div class="content-section">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
+        <h2>Follow us on social media for the latest news!</h2>
+        <div class="news-content-section">
+          	<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fgeorgesrockstars&amp;width=490&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=true&amp;header=true&amp;height=435"
+             scrolling="yes" frameborder="0" style="border:none; overflow:hidden; width:490px; height:400px;
+             background: white; float:left; " allowTransparency="true"></iframe>
         </div>
       </div>
     </main>
 
     <footer>
-      <div class="contact-section">
-        <div class="content-wrapper">
-          <h3>Contact Us</h3>
-          <p>info@georgesrockstars.com</p>
-          <p>01489 892607</p>
+          <div class="contact-section">
+            <div class="container">
+              <h3>Send us a message!</h3>
+          <div class="form">
+            <form class="contact-form" action="index.html" method="post">
+              <input type="text" name="field1" placeholder="Your Name">
+              <input type="text" name="field2" placeholder="Email Address">
+              <textarea name="field3" placeholder="Type your message here."></textarea>
+              <button class="contact-button" type="button" name="button">Send</button>
+            </form>
+          </div>
+          <h3>Get in touch!</h3>
+            <p><i class="fas fa-envelope-square"></i> info@georgesrockstars.com</p>
+            <p><i class="fas fa-phone"></i> 01489 892607</p>
+          </div>
+        <div class="social-wrapper">
+          <a href="https://www.facebook.com/georgesrockstars/"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.instagram.com/georgesrockstars/?hl=es-la"><i class="fab fa-instagram-square"></i></a>
         </div>
-      <div class="content-wrapper">
-        <h3>Social</h3>
-        <a href="www.facebook.com/georgesrockstars">Facebook</a>
-        <a href="www.instagram.com/georgesrockstars">Instagram</a>
+        <div class="contact-wrapper">
+          <a href="https://apps.charitycommission.gov.uk/Showcharity/RegisterOfCharities/CharityFramework.aspx?RegisteredCharityNumber=1188730&SubsidiaryNumber=0">
+            <h3>Registered Charity Number <br>1188730</h3></a>
+        </div>
       </div>
-      <p>Copyright | 2020 | George's Rockstars- Registered Charity 1188730</p>
+      <div>
+        <p class="copyright">Copyright George's Rockstars 2020 | Cookies | Privacy Policy</p>
       </div>
     </footer>
 
-    <script type="text/javascript" href="index.js">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" href="script.js"></script>
+    <script>
+    function toggleMenu(){
+      var nav = document.getElementById('dropdown');
+      nav.classList.toggle('open');
+    }
     </script>
   </body>
 </html>
