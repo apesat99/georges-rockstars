@@ -2,43 +2,140 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>What We Do - George's Rockstars</title>
+    <title>George's Rockstars Mission </title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b93a819c92.js" crossorigin="anonymous"></script>
   </head>
   <body>
+
     <header>
-      <div class="logo-container">
-        <img src="img/logo.png" alt="George's Rockstars Logo">
-      </div>
+
       <nav>
-        <ul>
-          <li>About Us</li>
-          <li>Events</li>
-          <li>Support Us</li>
-          <li><<button type="button" name="Donate"></button></li>
-        </ul>
+          <div class="nav-content">
+            <a class= "nav-logo" href="#"><img src="../img/logo.png" alt="George's Rockstars Logo"></a>
+          <div id="links">
+            <a href="#"><i class="fas fa-music"></i> Our Mission</a>
+            <a href="#"><i class="far fa-calendar-check"></i> Events</a>
+            <a href="#"><i class="far fa-heart"></i> Support Us</a>
+            <button class="nav-donate-button nav-link" type="button" name="button">Donate</button>
+          </div>^
+          <span id="menu" class="material-icons">menu</span>
+      </div>
+              <div id="dropdown" class="dropdown">
+                <a href="#"><i class="fas fa-music"></i> Our Mission</a>
+                <a href="#"><i class="far fa-calendar-check"></i> Events</a>
+                <a href="#"><i class="far fa-heart"></i> Support Us</a>
+                <button class="nav-donate-button"type="button" name="button">Donate</button>
+              </div>
+      </div>
       </nav>
     </header>
 
-    <div class="main-section">
-      <div class="content-wrapper">
-        <h1>y</h1>
-
+    <div class="background-wrapper">
+    <div class="mission-content">
+      <div class="mission-wrapper-1">
+        <h2>George's Rockstars Mission</h2>
+        <p>George's Rockstars was set up in late 2019 by George's family
+        with the simple mission to make children in hospital smile as much as
+        George did, starting with providing music therapy in children's hospital wards.
+        <br></p>
+      </div>
+      <div class="mission-img-1">
+          <img src="../img/therapy.png" alt="Music therapy in action">
+      </div>
+      <div class="mission-wrapper-2">
+        <h3>Why Music Therapy?</h3>
+        <p>George was fortunate enough to benefit from music therapy
+        sessions while in isolation during his bone marrow transplant
+        at Bristol Chidren's Hospital. Music therapy was the highlight of George's
+        week during a very tough time and George's parents saw how happy the children on
+        the ward were when the music therapist came around. It gave a then 4 year old George
+        a way to express his feelings of frustration.</p>
+      </div>
+      <div class="mission-wrapper-3">
+        <h3>What Is Music Therapy?</h3>
+        <p>"Music therapy is an established psychological clinical intervention,
+          which is delivered by Health and Care Professions Council (HCPC)
+          registered music therapists, to help people of all ages, whose lives have
+          been affected by injury, illness or disability through supporting their psychological,
+          emotional, cognitive, physical, communicative and social needs." (British Association for Music Therapy.)</p>
+          <p>For children who have life threatening illnesses or disabilities, music therapy
+          can be an extremely affective way of helping them to communicate their thoughts,
+          feelings and worries during difficult and stressful times. </p>
         </div>
-
-        <footer>
-          <div class="contact-section">
-            <div class="content-wrapper">
-              <h3>Contact Us</h3>
-              <p>info@georgesrockstars.com</p>
-              <p>01489 892607</p>
+          <div class="mission-img-2">
+            <img src="../img/xmas-fayre.jpg" alt="Fundraising in action">
+        </div>
+        <div class="mission-wrapper-4">
+          <h3>Our Work So Far.</h3>
+          <p>Initial fundraising started in November 2019 with the aim to raise over
+            £5000 to enable us to register as an official charity. Thanks to tremendous support from George's school,
+            Curdridge Primary and help from Rocksteady Music School, our first target was hit in just 6 weeks enabling us to
+            apply for registration which we received in March 2020. <br> We have regular fundraising events from abseils to quiz nights.
+            We have since been hard at work applying for more funding through grants and corporate sponsorship in order to take on
+            our first music therapist for the childrens department in Queen Alexandra Hospital, Portsmouth.
+            Our aim is to expand the number of hospitals we provide music therapy in as the charity and
+            funding grows.</p>
+        </div>
+      </div>
+        <div class="thanks-container">
+          <div class="heading-container">
+          <h3>Special thanks for your continued support!</h3>
+          </div>
+          <div class="thanks-one">
+            <a href="https://www.curdridgeprimaryschool.co.uk/"><img src="../img/curdridge.png" alt="Curdridge Primary School"></a>
+          </div>
+          <div class="thanks-two">
+            <a href="https://www.rocksteadymusicschool.com/"><img src="../img/rocksteady.png" alt="Rocksteady Music School"> </a>
+          </div>
+          <div class="thanks-three">
+            <a href="http://pipertreeservices.com/"> <img src="../img/piper.jpg" alt=""> </a>
+          </div>
+        </div>
+        </div>
+      </div>
+      
+      <footer>
+            <div class="contact-section">
+              <div class="container">
+                <h3>Send us a message!</h3>
+            <div class="form">
+              <form class="contact-form" action="index.html" method="post">
+                <input type="text" name="field1" placeholder="Your Name">
+                <input type="text" name="field2" placeholder="Email Address">
+                <textarea name="field3" placeholder="Type your message here."></textarea>
+                <button class="contact-button" type="button" name="button">Send</button>
+              </form>
             </div>
-          <div class="content-wrapper">
-            <h3>Social</h3>
-            <a href="www.facebook.com/georgesrockstars">Facebook</a>
-            <a href="www.instagram.com/georgesrockstars">Instagram</a>
+            </div>
+            <div class="contact-wrapper">
+              <h3>Get in touch!</h3>
+                <p><i id="email" class="fas fa-envelope-square"></i> info@georgesrockstars.com</p>
+                <p><i id="phone" class="fas fa-phone"></i> 01489 892607</p>
+            </div>
+          <div class="social-wrapper">
+            <a href="https://www.facebook.com/georgesrockstars/"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/georgesrockstars/?hl=es-la"><i class="fab fa-instagram-square"></i></a>
           </div>
-          <p>Copyright | 2020 | George's Rockstars- Registered Charity 1188730</p>
+          <div class="charity-wrapper">
+            <a class="charity" href="https://apps.charitycommission.gov.uk/Showcharity/RegisterOfCharities/CharityFramework.aspx?RegisteredCharityNumber=1188730&SubsidiaryNumber=0">
+              <p>Registered Charity Number <br>1188730</p></a>
           </div>
-        </footer>
-  </body>
-</html>
+        </div>
+        <div>
+          <p class="copyright">&copy; Copyright George's Rockstars 2020 | Cookies | Privacy Policy | Site by Online Design</p>
+        </div>
+      </footer>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../script.js" charset="utf-8"></script>
+
+      </body>
+    </html>
