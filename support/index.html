@@ -2,43 +2,115 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Support George's Rockstars</title>
+    <title>George's Rockstars Home </title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b93a819c92.js" crossorigin="anonymous"></script>
   </head>
   <body>
+
     <header>
-      <div class="logo-container">
-        <img src="img/logo.png" alt="George's Rockstars Logo">
-      </div>
+
       <nav>
-        <ul>
-          <li>About Us</li>
-          <li>Events</li>
-          <li>Support Us</li>
-          <li><<button type="button" name="Donate"></button></li>
-        </ul>
+          <div class="nav-content">
+            <a class= "nav-logo" href="#"><img src="../img/logo.png" alt="George's Rockstars Logo"></a>
+          <div id="links">
+            <a href="#"><i class="fas fa-music"></i> Our Mission</a>
+            <a href="#"><i class="far fa-calendar-check"></i> Events</a>
+            <a href="#"><i class="far fa-heart"></i> Support Us</a>
+            <button class="nav-donate-button nav-link" type="button" name="button">Donate</button>
+          </div>^
+          <span id="menu" class="material-icons">menu</span>
+      </div>
+              <div id="dropdown" class="dropdown">
+                <a href="#"><i class="fas fa-music"></i> Our Mission</a>
+                <a href="#"><i class="far fa-calendar-check"></i> Events</a>
+                <a href="#"><i class="far fa-heart"></i> Support Us</a>
+                <button class="nav-donate-button"type="button" name="button">Donate</button>
+              </div>
+      </div>
       </nav>
     </header>
+    
+      <div class="support-section">
+        <h2>Help fund children's music therapy in hospitals!</h2>
+        <div class="support-1">
+          <h3>How to help.</h3>
+          <p>There are so many fun ways to help fund music therapy for children in hospital and the more funding we
+          receive the more hospitals we can offer music therapy to and more children will
+          benefit from music therapy while going through tough and stressful times in hospital.</p>
 
-    <div class="story-section">
-      <div class="content-wrapper">
-        <h1></h1>
+          <p>From bake sales, sponsored walks / runs / swims to big challenges and live music events, there
+          are so many ways to support George's Rockstars!</p>
 
+          <p>Check out our <a href="#">events</a> page for our upcoming events or <a href="#" >get in touch</a> if you have a fundraiser you would
+          like to do for us! </p>
         </div>
 
-        <footer>
-          <div class="contact-section">
-            <div class="content-wrapper">
-              <h3>Contact Us</h3>
-              <p>info@georgesrockstars.com</p>
-              <p>01489 892607</p>
+        <div class="support-2">
+          <h3>Donations</h3>
+          <p>Thank you so much for considering George's Rockstars for donating your hard earned money
+          to! We hugely appreciate every single donation we receive and unlike large charities, we have minimal
+          costs to cover so you donations go directly to funding children's music therapy!</p>
+
+          <p>We are currently in the process of setting up with a new fundraising platform
+          to make donation even easier. For the moment, we are still using our initial <a href="#">Go Fund Me</a>
+          campaign that we set up when we started the charity which you can donate through. </p>
+        </div>
+
+        <div class="support-3">
+          <h3>Merchandise</h3>
+          <p>We have a range of George's Rcokstars merchandise, from t-shirts and hoodies to lanyards and more!
+          If you would like to purchase and or have some to sell at your event please email us at <a href="#">info@georgesrockstars.com</a></p>
+        </div>
+
+        <div class="support-4">
+          <h3>Company Sponsors</h3>
+          <p>Sponsorships from companies are a huge help to funding our charity! If your company would like
+          to sponsor George's Rockstars, please get in touch! We would love to have you on board!!</p>
+        </div>
+      </div>
+
+
+      <footer>
+            <div class="contact-section">
+              <div class="container">
+                <h3>Send us a message!</h3>
+            <div class="form">
+              <form class="contact-form" action="index.html" method="post">
+                <input type="text" name="field1" placeholder="Your Name">
+                <input type="text" name="field2" placeholder="Email Address">
+                <textarea name="field3" placeholder="Type your message here."></textarea>
+                <button class="contact-button" type="button" name="button">Send</button>
+              </form>
             </div>
-          <div class="content-wrapper">
-            <h3>Social</h3>
-            <a href="www.facebook.com/georgesrockstars">Facebook</a>
-            <a href="www.instagram.com/georgesrockstars">Instagram</a>
+            </div>
+            <div class="contact-wrapper">
+              <h3>Get in touch!</h3>
+                <p><i id="email" class="fas fa-envelope-square"></i> info@georgesrockstars.com</p>
+                <p><i id="phone" class="fas fa-phone"></i> 01489 892607</p>
+            </div>
+          <div class="social-wrapper">
+            <a href="https://www.facebook.com/georgesrockstars/"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/georgesrockstars/?hl=es-la"><i class="fab fa-instagram-square"></i></a>
           </div>
-          <p>Copyright | 2020 | George's Rockstars- Registered Charity 1188730</p>
+          <div class="charity-wrapper">
+            <a class="charity" href="https://apps.charitycommission.gov.uk/Showcharity/RegisterOfCharities/CharityFramework.aspx?RegisteredCharityNumber=1188730&SubsidiaryNumber=0">
+              <p>Registered Charity Number <br>1188730</p></a>
           </div>
-        </footer>
-  </body>
+        </div>
+        <div>
+          <p class="copyright">&copy; Copyright George's Rockstars 2020 | Cookies | Privacy Policy | Site by Online Design</p>
+        </div>
+      </footer>
+
+          <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>              <script type="text/javascript" src="../script.js" charset="utf-8"></script>
+
+</body>
 </html>

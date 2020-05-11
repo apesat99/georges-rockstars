@@ -2,43 +2,124 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Events George's Rockstars</title>
+    <title>George's Rockstars Home </title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b93a819c92.js" crossorigin="anonymous"></script>
   </head>
   <body>
+
     <header>
-      <div class="logo-container">
-        <img src="img/logo.png" alt="George's Rockstars Logo">
-      </div>
+
       <nav>
-        <ul>
-          <li>About Us</li>
-          <li>Events</li>
-          <li>Support Us</li>
-          <li><<button type="button" name="Donate"></button></li>
-        </ul>
+          <div class="nav-content">
+            <a class= "nav-logo" href="#"><img src="../img/logo.png" alt="George's Rockstars Logo"></a>
+          <div id="links">
+            <a href="#"><i class="fas fa-music"></i> Our Mission</a>
+            <a href="#"><i class="far fa-calendar-check"></i> Events</a>
+            <a href="#"><i class="far fa-heart"></i> Support Us</a>
+            <button class="nav-donate-button nav-link" type="button" name="button">Donate</button>
+          </div>^
+          <span id="menu" class="material-icons">menu</span>
+      </div>
+              <div id="dropdown" class="dropdown">
+                <a href="#"><i class="fas fa-music"></i> Our Mission</a>
+                <a href="#"><i class="far fa-calendar-check"></i> Events</a>
+                <a href="#"><i class="far fa-heart"></i> Support Us</a>
+                <button class="nav-donate-button"type="button" name="button">Donate</button>
+              </div>
+      </div>
       </nav>
     </header>
 
     <div class="main-section">
-      <div class="content-wrapper">
-        <h1></h1>
-
-        </div>
-
+      <div class="heading-wrapper">
+        <h2>Upcoming Events</h2>
+      </div>
+      <div class="event-1-img">
+        <img class="event-img" src="../img/spinnaker.jpg" alt="Spinnaker Tower Abseil">
+      </div>
+      <div class="event-1-text">
+        <h3>Spinnaker Tower Abseil, Portsmouth</h3>
+        <p>Date: 17th May 2020</p>
+        <p>Time: Abseils thoughout the day!</p>
+        <p>An army of Rockstars our taking on the mighty Spinnaker Tower in
+        Portsmouth!! Or come down and cheer them on from the bottom!
+        You'll find our gazebo at the bottom! If you would like to take part with have a few spaces
+        left. Get in touch below or at info@georgesrockstars.com</p>
+      </div>
+      <div class="event-2-img">
+        <img class="event-img" src="../img/gung-ho.png" alt="Gung Ho Inflatable Race">
+      </div>
+      <div class="event-2-text">
+        <h3>Gung Ho Inflatable Race, Southampon Common</h3>
+        <p>Date: 20th June 2020</p>
+        <p>Time: 10am</p>
+        <p>Amazing fun for a great cause on Southampton Common
+        with a 5k inflatable race!</p>
+      </div>
+      <div class="event-3-img">
+        <img class="event-img" src="../img/plane-pull.jpg" alt="Bournmouth Airport Plane Pull">
+      </div>
+      <div class="event-3-text">
+        <h3>Dorset Plane Pull 2020, Bournemouth Airport</h3>
+        <p>Date: Monday(BH) 31st August 2020</p>
+        <p>Time: 9am</p>
+        <p>A team of 20 strong guys are pulling a Boeing 737 50m as
+          fast as possible for George’s Rockstars!! Fun and entertainment
+          including food, drink, live entertainment and activities for the kids!</p>
+      </div>
+      <div class="event-4-img">
+        <img class="event-img" src="../img/hundred-acres.jpg" alt="Hundred Acres Woodland Race">
+      </div>
+      <div class="event-4-text">
+        <h3>Hundred Acres Woodland Race 5km / 10km, Wickham</h3>
+        <p>Date: NEW DATE! Sunday 1st November 2020</p>
+        <p>Time: 9am- 11am</p>
+        <p>⭐️APRIL 2020 EVENT POSTPONED TO 1ST NOV 2020 ⭐️
+          Come and join our running team at the ancient woodland near Wickham for a 10k or 5k race.
+          Raise a min £100 sponsorship and we will pay your entry fee and give you a George's ROCKSTAR'S T-shirt!</p>
+      </div>
+    </div>
         <footer>
-          <div class="contact-section">
-            <div class="content-wrapper">
-              <h3>Contact Us</h3>
-              <p>info@georgesrockstars.com</p>
-              <p>01489 892607</p>
+              <div class="contact-section">
+                <div class="container">
+                  <h3>Send us a message!</h3>
+              <div class="form">
+                <form class="contact-form" action="index.html" method="post">
+                  <input type="text" name="field1" placeholder="Your Name">
+                  <input type="text" name="field2" placeholder="Email Address">
+                  <textarea name="field3" placeholder="Type your message here."></textarea>
+                  <button class="contact-button" type="button" name="button">Send</button>
+                </form>
+              </div>
+              </div>
+              <div class="contact-wrapper">
+                <h3>Get in touch!</h3>
+                  <p><i id="email" class="fas fa-envelope-square"></i> info@georgesrockstars.com</p>
+                  <p><i id="phone" class="fas fa-phone"></i> 01489 892607</p>
+              </div>
+            <div class="social-wrapper">
+              <a href="https://www.facebook.com/georgesrockstars/"><i class="fab fa-facebook-square"></i></a>
+              <a href="https://www.instagram.com/georgesrockstars/?hl=es-la"><i class="fab fa-instagram-square"></i></a>
             </div>
-          <div class="content-wrapper">
-            <h3>Social</h3>
-            <a href="www.facebook.com/georgesrockstars">Facebook</a>
-            <a href="www.instagram.com/georgesrockstars">Instagram</a>
+            <div class="charity-wrapper">
+              <a class="charity" href="https://apps.charitycommission.gov.uk/Showcharity/RegisterOfCharities/CharityFramework.aspx?RegisteredCharityNumber=1188730&SubsidiaryNumber=0">
+                <p>Registered Charity Number <br>1188730</p></a>
+            </div>
           </div>
-          <p>Copyright | 2020 | George's Rockstars- Registered Charity 1188730</p>
+          <div>
+            <p class="copyright">&copy; Copyright George's Rockstars 2020 | Cookies | Privacy Policy | Site by Online Design</p>
           </div>
         </footer>
+
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>              <script type="text/javascript" src="../script.js" charset="utf-8"></script>
+
   </body>
 </html>
