@@ -15,3 +15,23 @@ $(document).mouseup(function(e){
     container.hide();
   }
 });
+
+
+$("#donate").click(function() {
+  window.open("https://www.gofundme.com/f/george039s-rockstars");
+
+});
+
+$("#donate-dropdown").click(function() {
+  window.open("https://www.gofundme.com/f/george039s-rockstars");
+});
+
+$("#donate-hero").click(function(){
+  window.open("https://www.gofundme.com/f/george039s-rockstars");
+});
+
+$(document).ready(function () {
+    $( ".contact-button" ).click(function() {
+        $( ".contact-form" ).submit();
+    });
+});
