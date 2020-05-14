@@ -98,36 +98,87 @@
       </div>
 
       <footer>
-            <div class="contact-section">
-              <div class="container">
-                <h3>Send us a message!</h3>
-            <div class="form">
-              <form class="contact-form" action="index.html" method="post">
-                <input type="text" name="field1" placeholder="Your Name">
-                <input type="text" name="field2" placeholder="Email Address">
-                <textarea name="field3" placeholder="Type your message here."></textarea>
-                <button class="contact-button" type="button" name="button">Send</button>
-              </form>
+
+        <div id="contact-section">
+
+                <h3 class="footer-header">Get In Touch!</h3>
+
+            <div id="form-grid" class="row">
+
+                <div class="col-xl-8 offset-xl-2 py-5">
+
+                    <form id="contact-form" method="post" action="contact.php" role="form">
+
+                      <div class="messages"></div>
+
+                      <div class="controls">
+
+                          <div class="row">
+                              <div class="col-md-8">
+                                  <div class="form-group">
+                                      <label for="form_name">Name *</label>
+                                      <input id="form_name" type="text" name="name" class="form-control" placeholder="Name *" required="required" data-error="Firstname is required.">
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-8">
+                                  <div class="form-group">
+                                      <label for="form_email">Email *</label>
+                                      <input id="form_email" type="email" name="email" class="form-control" placeholder="Email *" required="required" data-error="Valid email is required.">
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-8">
+                                  <div class="form-group">
+                                      <label for="form_message">Message *</label>
+                                      <textarea id="form_message" name="message" class="form-control" placeholder="Message *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                              </div>
+                              <div class="col-md-12">
+                                  <input id="contact-button" type="submit" class="btn btn-success btn-send" value="Send message">
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <p class="text-muted">
+                                      <strong>*</strong> These fields are required.</p>
+                              </div>
+                          </div>
+                      </div>
+
+                  </form>
+
+                </div>
+
             </div>
-            </div>
+
+
+
+        <!--<div class="footer-wrapper">-->
             <div class="contact-wrapper">
-              <h3>Get in touch!</h3>
                 <p><i id="email" class="fas fa-envelope-square"></i> info@georgesrockstars.com</p>
                 <p><i id="phone" class="fas fa-phone"></i> 01489 892607</p>
             </div>
           <div class="social-wrapper">
-            <a href="https://www.facebook.com/georgesrockstars/"><i class="fab fa-facebook-square"></i></a>
-            <a href="https://www.instagram.com/georgesrockstars/?hl=es-la"><i class="fab fa-instagram-square"></i></a>
-            <a href="https://www.gofundme.com/f/george039s-rockstars"><i class="fas fa-heart"></i></a>
+            <a href="https://www.facebook.com/georgesrockstars/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/georgesrockstars/?hl=es-la" target="_blank"><i class="fab fa-instagram-square"></i></a>
+            <a href="https://www.gofundme.com/f/george039s-rockstars" target="_blank"><i class="fas fa-heart"></i></a>
           </div>
           <div class="charity-wrapper">
-            <a class="charity" href="https://apps.charitycommission.gov.uk/Showcharity/RegisterOfCharities/CharityFramework.aspx?RegisteredCharityNumber=1188730&SubsidiaryNumber=0">
+            <a class="charity" href="https://apps.charitycommission.gov.uk/Showcharity/RegisterOfCharities/CharityFramework.aspx?RegisteredCharityNumber=1188730&SubsidiaryNumber=0" target="_blank">
               <p>Registered Charity Number <br>1188730</p></a>
           </div>
         </div>
         <div>
           <p class="copyright">&copy; Copyright George's Rockstars 2020 | Cookies | Privacy Policy | Site by Online Design</p>
         </div>
+      <!--</div>-->
+      </div>
       </footer>
 
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
